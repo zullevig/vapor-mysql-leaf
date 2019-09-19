@@ -15,7 +15,7 @@ public func routes(_ router: Router) throws {
     router.post("testmodel") { req -> Future<Response> in
         return try req.content.decode(TestModel.self).flatMap { test in
             return test.save(on: req).map { _ in
-                return req.redirect(to: "test")
+                return req.redirect(to: "testmodel")
             }
         }
     }
