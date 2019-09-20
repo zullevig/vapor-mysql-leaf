@@ -11,11 +11,6 @@ final class TestModel: MySQLModel {
     }
 }
 
-extension TestModel: Content {
-    
-}
-
-extension TestModel: Migration {
-    
-}
+extension TestModel: Content {}
+extension TestModel: Migration {}
 
